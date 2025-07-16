@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Online Catalog </title>
+  <link rel="icon" type="image/x-icon" href="icon/logofavicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Catalog | Vocational College Tawau Library</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="image/logo.webp" alt="Library Logo" class="logo"/>
+        Vocational College Tawau Library
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Resources ▼</a>
+            <div class="dropdown-content">
+              <a href="services.html">User Services</a>
+              <a href="tools.html">Educational Tools</a>
+              <a href="events.html">Events</a>
+              <a href="catalog.html">Online Catalog</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="contact.html">Contact</a>
+              <a href="feedback.html">User Feedback</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container section-main">
+    <h1>Library Online Catalog</h1>
+    <p>Search and discover books, journals, and multimedia available at Vocational College Tawau Library.</p>
+    <div class="catalog-layout">
+      <div class="catalog-main">
+        <form class="catalog-search-form" autocomplete="off">
+          <input type="text" placeholder="Search by title, author, or keyword..." class="catalog-search-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="catalog-table-wrap">
+        <table class="catalog-table">
+          <thead>
+            <tr>
+              <th>Cover</th>
+              <th>Title &amp; Details</th>
+              <th>Call Number</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="image/learning.jpg" alt="Learning Web Design" class="catalog-cover"/>
+              </td>
+              <td>
+                <strong>Learning Web Design</strong><br>
+                <span>by Jennifer Niederst Robbins (2022)</span><br>
+                <span class="tooltip">Web Development
+                  <span class="tooltiptext">Category: Web Development</span>
+                </span>
+              </td>
+              <td>005.7 ROB</td>
+              <td class="status-available">Available</td>
+              <td class="catalog-actions">
+                <button class="btn" title="Reserve this book">Reserve</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="image/digital.jpg" alt="Digital Literacy Fundamentals" class="catalog-cover"/>
+              </td>
+              <td>
+                <strong>Digital Literacy Fundamentals</strong><br>
+                <span>by Paul Gilster (2023)</span><br>
+                <span class="tooltip">Information Technology
+                  <span class="tooltiptext">Category: Information Technology</span>
+                </span>
+              </td>
+              <td>004.67 GIL</td>
+              <td class="status-loan">On Loan</td>
+              <td class="catalog-actions">
+                <button class="btn" disabled title="Currently loaned out">Reserve</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="image/introduction.jpg" alt="Introduction to Psychology" class="catalog-cover"/>
+              </td>
+              <td>
+                <strong>Introduction to Psychology</strong><br>
+                <span>by James W. Kalat (2020)</span><br>
+                <span class="tooltip">Psychology
+                  <span class="tooltiptext">Category: Psychology</span>
+                </span>
+              </td>
+              <td>150 KAL</td>
+              <td class="status-available">Available</td>
+              <td class="catalog-actions">
+                <button class="btn">Reserve</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <aside class="catalog-side">
+        <h3>User Services</h3>
+        <ul class="user-services-list">
+          <li>
+            <a href="#" class="btn user-login-btn">User Login</a>
+            <span class="tooltip">
+              <img src="image/login.png" alt="Login" class="info-icon"> 
+              <span class="tooltiptext">Access your library account.</span>
+            </span>
+          </li>
+          <li>
+            <a href="services.html" class="user-link">How to Borrow Books</a>
+            <span class="tooltip">
+              <img src="image/help.png" class="info-icon" alt="Help">
+              <span class="tooltiptext">Max 3 books, 14 days per user</span>
+            </span>
+          </li>
+          <li>
+            <a href="services.html" class="user-link">Renew / Reserve</a>
+            <span class="tooltip">
+              <img src="image/renewal.png" class="info-icon" alt="Renew">
+              <span class="tooltiptext">Renew or reserve books online</span>
+            </span>
+          </li>
+        </ul>
+        <div class="user-side-help">
+          <p>Need help? Visit <a href="contact.html">Contact</a> or <a href="services.html">User Services</a>.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <b>School Resource Centre’s Website ©2025 Copyright. All Rights Reserved, Powered By HTML<br>Best browser viewed using Google Chrome</b>
+      <p style="margin: 0 0 6px; font-size: .98rem;">
+      <b>This website is for educational purposes (IMS458)</b>
+    </div>
+  </footer>
+</body>
+</html>

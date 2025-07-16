@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="icon/logofavicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="image/logo.webp" alt="Library Logo" class="logo"/>
+        Vocational College Tawau Library
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Resources ▼</a>
+            <div class="dropdown-content">
+              <a href="services.html">User Services</a>
+              <a href="tools.html">Educational Tools</a>
+              <a href="events.html">Events</a>
+              <a href="catalog.html">Online Catalog</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="contact.html">Contact</a>
+              <a href="feedback.html">User Feedback</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container section-main">
+    <h1>Welcome to Vocational College Tawau Library</h1>
+    <p>A space where knowledge is sown to brighten the future.</p>
+    <a href="news.html" class="btn">See Latest News & Announcements</a>
+          <section style="margin-top:2.5em; padding:2em 1em; background:#fff0f7; border-radius:16px; box-shadow:0 3px 16px #ffd3f640;">
+        <h2>Website Objectives & Reflection</h2>
+        <h3>Introduction & Objectives</h3>
+        <p>
+          The main objective of this website is to serve as a digital hub for Vocational College Tawau Library, providing easy access to information, resources, and services for students and teachers. The website aims to encourage lifelong reading habits, promote digital literacy, and make library resources accessible at any time.
+        </p>
+        <h3>Advantages</h3>
+        <ul>
+          <li>Centralized access to news, catalogs, and user services</li>
+          <li>Improves communication between library and users</li>
+          <li>Promotes learning and self-service for students</li>
+          <li>Enables online reservations and renewals for convenience</li>
+        </ul>
+      </section>
+  </main>
+  <div class="slider-container">
+    <div class="slider">
+      <img src="image/read.png" class="slide active" alt="Reading Challenge">
+      <img src="image/workshop.png" class="slide" alt="Workshop">
+      <img src="image/review.png" class="slide" alt="Book Review Contest">
+    </div>
+    <div class="slider-controls">
+      <button onclick="plusSlides(-1)">&#10094;</button>
+      <button onclick="plusSlides(1)">&#10095;</button>
+    </div>
+  </div>
+  <script>
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+function showSlide(n) {
+  slides.forEach((s, i) => s.style.display = i === n ? 'block' : 'none');
+}
+function plusSlides(n) {
+  slideIndex = (slideIndex + n + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
+function autoSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+  setTimeout(autoSlide, 3000);
+}
+document.addEventListener('DOMContentLoaded', () => {
+  showSlide(slideIndex);
+  setTimeout(autoSlide, 3000);
+});
+</script>
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <b>School Resource Centre’s Website ©2025 Copyright. All Rights Reserved, Powered By HTML<br>Best browser viewed using Google Chrome</b>
+      <p style="margin: 0 0 6px; font-size: .98rem;">
+      <b>This website is for educational purposes (IMS458)</b>
+    </div>
+  </footer>
+</body>
+</html>
